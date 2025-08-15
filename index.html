@@ -19,7 +19,6 @@
       --radius: 20px;
     }
 
-
     *, *::before, *::after { box-sizing: border-box; }
     html, body { height: 100%; }
     body {
@@ -181,6 +180,7 @@
         <button class="chip" data-goto="proyectos">Metodología</button>
         <button class="chip" data-goto="habilidades">Habilidades</button>
         <button class="chip" data-goto="contacto">Contacto</button>
+        <button class="chip" onclick="window.location.href='1/x.html'">Otro Portafolio</button>
       </nav>
     </div>
   </header>
@@ -194,7 +194,7 @@
 
         <div class="cta-grid" aria-label="Accesos rápidos a pestañas">
           <button class="cta" data-goto="sobre">
-            <span>fferthr</span>
+            <span>Introduccinón </span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </button>
           <button class="cta" data-goto="proyectos">
@@ -209,15 +209,19 @@
             <span>Contacto</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </button>
+          <button class="cta" onclick="window.location.href='otros/portafolio.html'">
+            <span>Ver Otro Portafolio</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
         </div>
       </div>
 
-      <div class="profile" aria-label="Logo/Avatar"></div>
+      <div class="profile" aria-label="Logo/Avatar">💼</div>
     </section>
 
     <section class="tabs" aria-live="polite">
       <div class="tabbar" role="tablist" aria-label="Secciones del portafolio">
-        <button class="tab-btn active" role="tab" aria-selected="true" data-tab="sobre">inicio</button>
+        <button class="tab-btn active" role="tab" aria-selected="true" data-tab="sobre">Introducción</button>
         <button class="tab-btn" role="tab" aria-selected="false" data-tab="proyectos">Metodología</button>
         <button class="tab-btn" role="tab" aria-selected="false" data-tab="habilidades">Habilidades</button>
         <button class="tab-btn" role="tab" aria-selected="false" data-tab="contacto">Contacto</button>
@@ -254,7 +258,6 @@
           </div>
         </div>
       </article>
-
       <article id="tab-proyectos" class="panel" role="tabpanel">
         <h2>2. Metodología de Desarrollo</h2>
         <ul>
@@ -265,7 +268,6 @@
           <li><strong>Despliegue y monitoreo:</strong> publicación y seguimiento de métricas para mejora continua.</li>
         </ul>
         <p>Este proceso colaborativo permitió crear un producto alineado a los objetivos del cliente y enfocado en la satisfacción del usuario final.</p>
-
         <h2>3. Arquitectura de la Información</h2>
         <ul>
           <li><strong>Inicio:</strong> presentación breve y visualmente atractiva.</li>
@@ -287,7 +289,6 @@
           <li><strong>Interactividad:</strong> animaciones sutiles y efectos hover no intrusivos.</li>
           <li><strong>Responsive Design:</strong> adaptación a móviles, tablets y escritorio.</li>
         </ul>
-
         <h2>6. Seguridad y Mantenimiento</h2>
         <ul>
           <li><strong>SSL:</strong> HTTPS para confianza y SEO.</li>
@@ -304,7 +305,6 @@
           <li>Facilitar el trabajo comercial mostrando capacidades y proyectos.</li>
           <li>Obtener datos para iterar y mejorar servicios.</li>
         </ul>
-
         <h2>8. Recomendaciones Futuras</h2>
         <ul>
           <li>Implementar blog con contenido actualizado.</li>
@@ -314,7 +314,6 @@
           <li>Integración con redes sociales y chat.</li>
         </ul>
       </article>
-
       <article id="tab-habilidades" class="panel" role="tabpanel">
         <h2>5. Tecnologías Utilizadas</h2>
         <div class="grid cols-3">
@@ -344,14 +343,12 @@
           </div>
         </div>
       </article>
-
-      
       <article id="tab-contacto" class="panel" role="tabpanel">
         <h2>9. Información de Contacto</h2>
         <div class="grid cols-2">
           <div class="project">
             <h3>Datos</h3>
-            <p><strong>Email:</strong> contacto@tusitio.com</p>
+            <p><strong>Email:</strong> clase_del_profe_Garlan_Guevara@aucthlok.com</p>
             <p><strong>Teléfono:</strong> +123 456 7890</p>
             <p><strong>LinkedIn:</strong> linkedin.com/company/viewport</p>
             <p><strong>Instagram:</strong> @viewportdesign</p>
@@ -378,23 +375,20 @@
       </article>
     </section>
   </main>
-
   <footer>
     <div class="container">
-      <div> Créditos y Derechos a estudiantes de Manuel Bonilla</div>
+      <div> Créditos y Derechos a estudiantes de Manuel Bonilla de la clase de Diseño wed</div>
       <p> Brigitte lópez,
         Dasany Figueroa,
         Britney Trochez
         Oscar Luque ,
         German Amaya ,
         Diany Umanzor.</p>
-      <p><small>Documento elaborado con dedicación para reflejar la calidad y profesionalismo de viewport. • Actualizado: <time datetime="2025-06-16">16 de junio de 2025</time></small></p>
+      <p><small>Clase de Diseño wed impartida por el Docente Garland Dillon Carter Guevara: <time datetime="2025-06-16">16 de junio de 2025</time></small></p>
       <p><small>Año actual: <span id="year"></span></small></p>
     </div>
   </footer>
-
   <script>
-  
     const tabButtons = document.querySelectorAll('.tab-btn');
     const panels = {
       'sobre': document.getElementById('tab-sobre'),
@@ -436,10 +430,7 @@
     if (['sobre','proyectos','habilidades','contacto'].includes(initial)) {
       activateTab(initial);
     }
-
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-
-
